@@ -30,6 +30,11 @@ This article explains how to use Microsoft Surface Dock Firmware Update, newly r
  
 4. After several seconds, disconnect your Surface Dock from your device and then wait for 5 seconds before reconnecting. The Surface Dock Firmware Update will normally update the dock silently in background after you disconnect from the dock and reconnect. The process can take a few minutes to complete and will continue even if interrupted. 
 
+> [!NOTE]
+>
+> - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
+> - You will need to disconnect and reconnect the dock twice before the update fully completes.
+
 ### Manual installation
 If preferred, you can manually complete the update as follows:
 
@@ -37,8 +42,6 @@ If preferred, you can manually complete the update as follows:
 
 > [!NOTE]
 >
-> - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
-> - You will need to disconnect and reconnect the dock twice before the update fully completes.
 > - To create a log file, specify the path in the Msiexec command. For example, append /l*v %windir%\logs\ SurfaceDockFWI.log".
 
 ## Network deployment
