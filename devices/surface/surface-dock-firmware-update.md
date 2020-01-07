@@ -90,12 +90,13 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 | Log                              | Location                               | Notes                                                                                                                                                                                                         |
 | -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock Firmware Update log | Path needs to be specified (see note) | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
+| Surface Dock Firmware Update log | Path needs to be specified (see note) |                                                                                          |
 | Windows Device Install log       | %windir%\inf\setupapi.dev.log           | For more information about using Device Install Log, refer to [SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
 
 
 **Table 2. Event log IDs for Surface Dock Firmware Update**<br>
-Events are logged in the Application Event Log.  Note:  Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.
+Events are logged in the Application Event Log.
+Event Viewer > Windows Logs > Application
 
 | Event ID | Event type                                                           |
 | -------- | -------------------------------------------------------------------- |
@@ -108,6 +109,9 @@ Events are logged in the Application Event Log.  Note:  Earlier versions of this
 | 2007     | Firmware update finished.                                            |
 | 2008     | BEGIN dock telemetry.                                                |
 | 2011     | END dock telemetry.                                                  |
+
+> [!NOTE]
+> Earlier versions of this tool wrote events to Event Viewer > Applications and Services Logs > Microsoft Surface Dock Updater
 
 ## Troubleshooting tips
 
