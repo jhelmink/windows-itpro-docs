@@ -45,7 +45,7 @@ If preferred, you can manually complete the update as follows:
 
 You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using System Center Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
 
-- **Msiexec.exe /i <name of msi> /quiet /norestart** 
+**`msiexec.exe /i <name of msi> /quiet /norestart`** 
 
 > [!NOTE]
 > A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
@@ -59,7 +59,8 @@ For more information, refer to [Command line options](https://docs.microsoft.com
 You can use Intune to distribute Surface Dock Firmware Update to your devices. First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).
 
 Use the following command:
-  - **msiexec /i <name of msi> /quiet /q**
+
+**`msiexec.exe /i <name of msi> /quiet /q`**
 
 ## How to verify completion of firmware update
 
